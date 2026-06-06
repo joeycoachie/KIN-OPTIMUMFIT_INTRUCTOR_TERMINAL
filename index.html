@@ -37,7 +37,6 @@
 </head>
 <body class="min-h-screen flex flex-col md:flex-row lang-en selection:bg-[#4CAF50] selection:text-white pb-12 md:pb-0">
 
-    <!-- AUTHENTICATION MODAL -->
     <div id="auth-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/80 transition-opacity duration-300 opacity-0">
         <div class="bg-[#111] border border-[#333] p-8 rounded-sm w-full max-w-sm transform scale-95 transition-transform duration-300" id="auth-box">
             <div class="flex justify-between items-center mb-6">
@@ -51,7 +50,6 @@
         </div>
     </div>
 
-    <!-- SIDE NAVIGATION BAR -->
     <aside class="w-full md:w-64 border-b md:border-b-0 md:border-r border-[#222] bg-[#090909] flex flex-col flex-shrink-0">
         <div class="p-6 border-b border-[#222]">
             <span class="protocol-id text-[#888] text-[9px] tracking-[0.25em] uppercase block mb-1">M.O.E. Operating System</span>
@@ -60,7 +58,6 @@
         <nav class="flex-1 p-6 space-y-6">
             <div class="space-y-1">
                 <span class="protocol-id text-[9px] text-[#555] tracking-[0.2em] uppercase block mb-2 font-semibold">Gateway Control</span>
-                <!-- ✦ CHANGE 1: Instructor back link routes to Obsidian Gate -->
                 <a id="gateway-link" href="https://the-obsidian-gate-five.vercel.app/" class="flex items-center gap-3 text-xs text-[#888] hover:text-white transition-colors py-2 protocol-id">
                     <span>← RETURN TO GATE</span>
                 </a>
@@ -90,11 +87,8 @@
         </div>
     </aside>
 
-    <!-- MAIN PORTAL -->
     <main class="flex-1 p-6 md:p-12 space-y-12 overflow-y-auto max-w-6xl">
 
-        <!-- Tab Navigation Bar -->
-        <!-- ✦ CHANGE 2: Academy tab is now visible to all (wolf-content class removed) -->
         <div class="flex overflow-x-auto border-b border-[#222] gap-8 protocol-id text-xs tracking-widest uppercase text-[#888] pb-1">
             <button id="tab-btn-dashboard" class="tab-btn active pb-3 whitespace-nowrap hover:text-white transition-colors" onclick="switchTab('dashboard')">Dashboard</button>
             <button id="tab-btn-calibration" class="tab-btn pb-3 whitespace-nowrap hover:text-white transition-colors" onclick="switchTab('calibration')">Calibration Manual</button>
@@ -103,7 +97,6 @@
             <button id="tab-btn-academy" class="tab-btn pb-3 whitespace-nowrap hover:text-[#a3a3a3] transition-colors" onclick="switchTab('academy')">The Academy</button>
         </div>
 
-        <!-- TAB 1: DASHBOARD -->
         <div id="tab-dashboard" class="tab-content active space-y-12">
             <div class="bg-subtle border border-subtle p-8 md:p-12 rounded-sm relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-64 h-64 bg-[#4CAF50] opacity-5 blur-[100px]"></div>
@@ -145,9 +138,7 @@
                 </div>
             </div>
 
-            <!--  -->
-
-                <div class="bg-[#111] border border-[#222] p-8 rounded-sm relative overflow-hidden">
+            <div class="bg-[#111] border border-[#222] p-8 rounded-sm relative overflow-hidden">
                 <span class="protocol-id text-xs text-[#ff4444] tracking-[0.2em] uppercase block mb-2 font-bold">/// ACTIVE OPERATIONAL DIRECTIVES ///</span>
                 <h3 class="text-2xl font-serif text-white mb-4">Immediate Floor Corrections</h3>
                 
@@ -168,8 +159,9 @@
                     </div>
                 </div>
             </div>
+            
+        </div>
 
-        <!-- TAB 2: CALIBRATION MANUAL -->
         <div id="tab-calibration" class="tab-content space-y-8">
             <div class="mb-4">
                 <span class="protocol-id text-xs text-[#3b82f6] tracking-[0.2em] uppercase block mb-1">Standardized Metrics</span>
@@ -178,7 +170,6 @@
                 <h2 class="text-3xl font-serif text-white tracking-tight" data-lang-ms>Matriks Visual Enam Kinetik</h2>
             </div>
             <div class="space-y-4">
-                <!-- Gate 01 -->
                 <div class="bg-subtle border border-subtle rounded-sm">
                     <button class="w-full text-left p-5 flex items-center justify-between focus:outline-none hover:bg-[#1a1a1a] transition-colors" onclick="toggleFlipboard(this)">
                         <div>
@@ -223,7 +214,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Gate 02 -->
                 <div class="bg-subtle border border-subtle rounded-sm">
                     <button class="w-full text-left p-5 flex items-center justify-between focus:outline-none hover:bg-[#1a1a1a] transition-colors" onclick="toggleFlipboard(this)">
                         <div>
@@ -267,7 +257,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Gate 03 -->
                 <div class="bg-subtle border border-subtle rounded-sm">
                     <button class="w-full text-left p-5 flex items-center justify-between focus:outline-none hover:bg-[#1a1a1a] transition-colors" onclick="toggleFlipboard(this)">
                         <div>
@@ -313,8 +302,7 @@
                 </div>
 
                 
-                <!-- Gate 04 -->
-<div class="bg-subtle border border-subtle rounded-sm">
+                <div class="bg-subtle border border-subtle rounded-sm">
 <button class="w-full text-left p-5 flex items-center justify-between focus:outline-none hover:bg-[#1a1a1a] transition-colors" onclick="toggleFlipboard(this)">
 <div>
 <p class="protocol-id text-[10px] text-[#3b82f6] tracking-[0.2em] uppercase mb-1">GATE 04</p>
@@ -358,7 +346,6 @@
 </div>
 </div>
 </div>
-                <!-- Gate 05 -->
                 <div class="bg-subtle border border-subtle rounded-sm">
                     <button class="w-full text-left p-5 flex items-center justify-between focus:outline-none hover:bg-[#1a1a1a] transition-colors" onclick="toggleFlipboard(this)">
                         <div>
@@ -402,7 +389,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Gate 06 -->
                 <div class="bg-subtle border border-[#3b82f6]/40 rounded-sm">
                     <button class="w-full text-left p-5 flex items-center justify-between focus:outline-none hover:bg-[#111] transition-colors" onclick="toggleFlipboard(this)">
                         <div>
@@ -449,7 +435,6 @@
             </div>
         </div>
 
-        <!-- TAB 3: CUEING ARMORY -->
         <div id="tab-armory" class="tab-content space-y-12">
             <div class="mb-4">
                 <span class="protocol-id text-xs text-[#4CAF50] tracking-[0.2em] uppercase block mb-1">Protocol: SYS-P049</span>
@@ -494,8 +479,7 @@
                     <thead>
                         <tr class="border-b border-[#222] bg-[#111] text-[#888]">
                             <th class="p-4 protocol-id tracking-wider uppercase">Clinical Term (Wolf)</th>
-                            <th class="p-4 protocol-id tracking-wider uppercase">Spatial Cue (Shepherd)</th>
-                            <th class="p-4 protocol-id tracking-wider uppercase">Target Outcome</th>
+                            <th class="p-4 protocol-id tracking-wider uppercase">Spatial Translation (Shepherd)</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-[#1a1a1a]">
@@ -506,7 +490,6 @@
                                 <span data-lang-zh>"将你的肚脐深吸贴向脊柱。"</span>
                                 <span data-lang-ms>"Tarik pusat anda rapat ke dalam tulang belakang."</span>
                             </td>
-                            <td class="p-4 text-[#888]">True abdominal hollow and spine articulation.</td>
                         </tr>
                         <tr>
                             <td class="p-4 font-mono text-white">Scapular Depression</td>
@@ -515,7 +498,6 @@
                                 <span data-lang-zh>"将肩膀沉下，肩胛骨向下滑入后方裤兜。"</span>
                                 <span data-lang-ms>"Luncurkan tulang belikat anda ke dalam poket belakang."</span>
                             </td>
-                            <td class="p-4 text-[#888]">Immediate shoulder stabilization and neck release.</td>
                         </tr>
                         <tr>
                             <td class="p-4 font-mono text-white">Neutral Pelvis</td>
@@ -524,7 +506,6 @@
                                 <span data-lang-zh>"端平你的骨盆，像端着一碗满得快要溢出的汤。"</span>
                                 <span data-lang-ms>"Seimbangkan pinggul anda seperti semangkuk sup."</span>
                             </td>
-                            <td class="p-4 text-[#888]">Elimination of joint-compressing pelvic tilt.</td>
                         </tr>
                         <tr>
                             <td class="p-4 font-mono text-white">Lumbo-pelvic Stability</td>
@@ -533,49 +514,12 @@
                                 <span data-lang-zh>"想象腹部有一圈马甲束身带正在均匀向中心绑紧。"</span>
                                 <span data-lang-ms>"Bayangkan tali pinggang korset mengetat di keliling pinggang."</span>
                             </td>
-                            <td class="p-4 text-[#888]">Deep core engagement prior to extremity loading.</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-mono text-white">Cervical Extension</td>
-                            <td class="p-4 italic text-[#a3a3a3]">
-                                <span data-lang-en>"Lengthen the crown of your head to the wall."</span>
-                                <span data-lang-zh>"将你的头顶向墙壁方向无限延伸。"</span>
-                                <span data-lang-ms>"Panjangkan ubun-ubun kepala anda ke arah dinding."</span>
-                            </td>
-                            <td class="p-4 text-[#888]">Correct alignment of the cervical-thoracic junction.</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-mono text-white">Knee-to-Toe Tracking</td>
-                            <td class="p-4 italic text-[#a3a3a3]">
-                                <span data-lang-en>"Keep your knees on the train tracks."</span>
-                                <span data-lang-zh>"让你的膝盖像在火车轨道上一样保持笔直前行。"</span>
-                                <span data-lang-ms>"Pastikan lutut anda bergerak lurus seperti di atas landasan kereta api."</span>
-                            </td>
-                            <td class="p-4 text-[#888]">Safe, linear lower-limb tracking.</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-mono text-white">Eccentric Spinal Articulation</td>
-                            <td class="p-4 italic text-[#a3a3a3]">
-                                <span data-lang-en>"Melt down bone-by-bone like warm wax."</span>
-                                <span data-lang-zh>"像热蜡一样，将脊椎逐节融化在垫子上。"</span>
-                                <span data-lang-ms>"Cairkan tulang belakang anda satu persatu seperti lilin panas."</span>
-                            </td>
-                            <td class="p-4 text-[#888]">Segmental spine mobility.</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-mono text-white">Thoracic Extension</td>
-                            <td class="p-4 italic text-[#a3a3a3]">
-                                <span data-lang-en>"Proud chest to the sun."</span>
-                                <span data-lang-zh>"骄傲地将胸膛迎向阳光。"</span>
-                                <span data-lang-ms>"Buka dada anda dengan bangga ke arah matahari."</span>
-                            </td>
-                            <td class="p-4 text-[#888]">Reversal of the desk-bound hunch.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+        </div>
 
-        <!-- TAB 4: KIN-013 UNWIND SCRIPT -->
         <div id="tab-unwind" class="tab-content space-y-12">
             <div class="mb-8 border-b border-[#222] pb-6">
                 <span class="protocol-id text-xs text-[#3b82f6] tracking-[0.2em] uppercase block mb-1">Execution Script: KIN-013</span>
@@ -589,7 +533,6 @@
 
             <div class="space-y-4">
 
-                <!-- Move 1: The Barber Pole -->
                 <div class="p-6 bg-subtle border border-subtle rounded-sm">
                     <div class="flex items-start gap-4 mb-4">
                         <span class="protocol-id text-[#4CAF50] text-xs font-bold shrink-0 mt-1">01</span>
@@ -609,7 +552,6 @@
                     </div>
                 </div>
 
-                <!-- Move 2: Climbing the Trunk -->
                 <div class="p-6 bg-subtle border border-subtle rounded-sm">
                     <div class="flex items-start gap-4 mb-4">
                         <span class="protocol-id text-[#4CAF50] text-xs font-bold shrink-0 mt-1">02</span>
@@ -629,7 +571,6 @@
                     </div>
                 </div>
 
-                <!-- Move 3: The Arrowhead -->
                 <div class="p-6 bg-subtle border border-subtle rounded-sm">
                     <div class="flex items-start gap-4 mb-4">
                         <span class="protocol-id text-[#4CAF50] text-xs font-bold shrink-0 mt-1">03</span>
@@ -654,7 +595,6 @@
                     </div>
                 </div>
 
-                <!-- ✦ NEW: Move 4: Thread The Needle -->
                 <div class="p-6 bg-subtle border border-subtle rounded-sm">
                     <div class="flex items-start gap-4 mb-4">
                         <span class="protocol-id text-[#4CAF50] text-xs font-bold shrink-0 mt-1">04</span>
@@ -679,7 +619,6 @@
                     </div>
                 </div>
 
-                <!-- ✦ NEW: Move 5: The Windmill -->
                 <div class="p-6 bg-subtle border border-subtle rounded-sm">
                     <div class="flex items-start gap-4 mb-4">
                         <span class="protocol-id text-[#4CAF50] text-xs font-bold shrink-0 mt-1">05</span>
@@ -704,7 +643,6 @@
                     </div>
                 </div>
 
-                <!-- ✦ NEW: Move 6: Pearls Off The Mat -->
                 <div class="p-6 border border-[#3b82f6]/30 bg-[#050505] rounded-sm">
                     <div class="flex items-start gap-4 mb-4">
                         <span class="protocol-id text-[#3b82f6] text-xs font-bold shrink-0 mt-1">06</span>
@@ -733,7 +671,6 @@
             </div>
         </div>
 
-        <!-- TAB 5: THE ACADEMY — ✦ CHANGE 3: visible to all instructors (wolf-content removed) -->
         <div id="tab-academy" class="tab-content space-y-12">
             <div class="mb-8 border-b border-[#222] pb-6">
                 <span class="protocol-id text-xs text-[#888] tracking-[0.2em] uppercase block mb-1">System Documentation</span>
@@ -772,7 +709,6 @@
                     </p>
                 </details>
 
-                <!-- Architect-only advanced section -->
                 <div class="wolf-content mt-8 border-t border-[#222] pt-8 space-y-4">
                     <span class="protocol-id text-xs text-[#ff4444] tracking-[0.2em] uppercase block mb-2">RESTRICTED — ARCHITECT ACCESS</span>
                     <p class="text-[#555] text-xs mb-4">Private training modules and clinical alignment metrics. Accessible strictly by verified Architects.</p>
@@ -897,4 +833,3 @@
     </script>
 </body>
 </html>
-
