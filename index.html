@@ -92,6 +92,7 @@
         <div class="flex overflow-x-auto border-b border-[#222] gap-8 protocol-id text-xs tracking-widest uppercase text-[#888] pb-1">
             <button id="tab-btn-dashboard" class="tab-btn active pb-3 whitespace-nowrap hover:text-white transition-colors" onclick="switchTab('dashboard')">Dashboard</button>
             <button id="tab-btn-calibration" class="tab-btn pb-3 whitespace-nowrap hover:text-white transition-colors" onclick="switchTab('calibration')">Calibration Manual</button>
+            <button id="tab-btn-taxonomy" class="tab-btn pb-3 whitespace-nowrap hover:text-white transition-colors" onclick="switchTab('taxonomy')">Class Taxonomy</button>
             <button id="tab-btn-armory" class="tab-btn pb-3 whitespace-nowrap hover:text-white transition-colors" onclick="switchTab('armory')">Cueing Armory</button>
             <button id="tab-btn-unwind" class="tab-btn pb-3 whitespace-nowrap hover:text-white transition-colors" onclick="switchTab('unwind')">KIN-013 Unwind</button>
             <button id="tab-btn-academy" class="tab-btn pb-3 whitespace-nowrap hover:text-[#a3a3a3] transition-colors" onclick="switchTab('academy')">The Academy</button>
@@ -436,6 +437,118 @@
             </div>
         </div>
 
+        <!-- NEW TAB: CLASS TAXONOMY (INSTRUCTOR FACING) -->
+        <div id="tab-taxonomy" class="tab-content space-y-12">
+            <div class="mb-4 border-b border-[#222] pb-6">
+                <span class="protocol-id text-xs text-[#3b82f6] tracking-[0.2em] uppercase block mb-1">Internal Programming Standards</span>
+                <h2 class="text-3xl font-serif text-white tracking-tight" data-lang-en>Class Taxonomy & Governance</h2>
+                <h2 class="text-3xl font-serif text-white tracking-tight" data-lang-zh>课程分类与系统管理</h2>
+                <h2 class="text-3xl font-serif text-white tracking-tight" data-lang-ms>Taksonomi Kelas & Tadbir Urus</h2>
+                <p class="text-[#888] text-sm mt-2 max-w-3xl leading-relaxed">This matrix governs spatial dynamics, apparatus assignment, and instructor clearance requirements. Adhere strictly to the Core Focus mapped to each tier.</p>
+            </div>
+
+            <div class="space-y-6">
+                
+                <!-- Level 1: Control -->
+                <div class="border border-[#222] bg-[#0a0a0a] rounded-sm overflow-hidden">
+                    <div class="bg-[#111] border-b border-[#222] p-5 flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <span class="protocol-id text-xs text-[#4CAF50] border border-[#4CAF50]/30 bg-[#4CAF50]/10 px-2 py-1 rounded-sm uppercase tracking-widest shrink-0">LEVEL 1</span>
+                            <h3 class="text-xl font-serif text-white">Optimum Control</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="text-sm text-[#e0e0e0] mb-2"><strong>Core Focus (Skeleton):</strong></p>
+                            <p class="text-sm text-[#a3a3a3] mb-4">Precision, Pelvic Stability, and foundational Motor Control.</p>
+                            <p class="text-sm text-[#e0e0e0] mb-2"><strong>Spatial Dynamics:</strong></p>
+                            <ul class="text-sm text-[#a3a3a3] space-y-1 list-disc list-inside">
+                                <li>Room 1 (Mat): Max Pax 15</li>
+                                <li>Room 2 (Reformer): Max Pax 8</li>
+                            </ul>
+                        </div>
+                        <div class="border-l md:border-[#222] pl-0 md:pl-6 pt-4 md:pt-0 border-t md:border-t-0">
+                            <p class="protocol-id text-[10px] text-[#888] uppercase tracking-widest mb-2">Cleared Instructors</p>
+                            <p class="text-sm text-white">Jess, Jenn, Shiuan, Chong</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Level 1+: Control+ -->
+                <div class="border border-[#222] bg-[#0a0a0a] rounded-sm overflow-hidden">
+                    <div class="bg-[#111] border-b border-[#222] p-5 flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <span class="protocol-id text-xs text-[#4CAF50] border border-[#4CAF50]/30 bg-[#4CAF50]/10 px-2 py-1 rounded-sm uppercase tracking-widest shrink-0">LEVEL 1+</span>
+                            <h3 class="text-xl font-serif text-white">Optimum Control+</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="text-sm text-[#e0e0e0] mb-2"><strong>Core Focus (Skeleton):</strong></p>
+                            <p class="text-sm text-[#a3a3a3] mb-4">Introduction to Structural Load & Chair Pedaling mechanics.</p>
+                            <p class="text-sm text-[#e0e0e0] mb-2"><strong>Spatial Dynamics:</strong></p>
+                            <ul class="text-sm text-[#a3a3a3] space-y-1 list-disc list-inside">
+                                <li>Room 1 (Mat/Chair): Max Pax 8</li>
+                            </ul>
+                        </div>
+                        <div class="border-l md:border-[#222] pl-0 md:pl-6 pt-4 md:pt-0 border-t md:border-t-0">
+                            <p class="protocol-id text-[10px] text-[#888] uppercase tracking-widest mb-2">Cleared Instructors</p>
+                            <p class="text-sm text-white">Jenn, Shiuan, Chong</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Level 2: Capacity -->
+                <div class="border border-[#222] bg-[#0a0a0a] rounded-sm overflow-hidden">
+                    <div class="bg-[#111] border-b border-[#222] p-5 flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <span class="protocol-id text-xs text-[#3b82f6] border border-[#3b82f6]/30 bg-[#3b82f6]/10 px-2 py-1 rounded-sm uppercase tracking-widest shrink-0">LEVEL 2</span>
+                            <h3 class="text-xl font-serif text-white">Optimum Capacity</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="text-sm text-[#e0e0e0] mb-2"><strong>Core Focus (Skeleton):</strong></p>
+                            <p class="text-sm text-[#a3a3a3] mb-4">Muscular Endurance, Athletic Load, and Load Transfer mechanics.</p>
+                            <p class="text-sm text-[#e0e0e0] mb-2"><strong>Spatial Dynamics:</strong></p>
+                            <ul class="text-sm text-[#a3a3a3] space-y-1 list-disc list-inside">
+                                <li>Room 2 (Reformer/Barrel): Max Pax 8</li>
+                            </ul>
+                        </div>
+                        <div class="border-l md:border-[#222] pl-0 md:pl-6 pt-4 md:pt-0 border-t md:border-t-0">
+                            <p class="protocol-id text-[10px] text-[#888] uppercase tracking-widest mb-2">Cleared Instructors</p>
+                            <p class="text-sm text-white">Jenn, Shiuan, Chong</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Level 3: Flow State -->
+                <div class="border border-[#222] bg-[#0a0a0a] rounded-sm overflow-hidden">
+                    <div class="bg-[#111] border-b border-[#222] p-5 flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <span class="protocol-id text-xs text-[#ff9800] border border-[#ff9800]/30 bg-[#ff9800]/10 px-2 py-1 rounded-sm uppercase tracking-widest shrink-0">LEVEL 3</span>
+                            <h3 class="text-xl font-serif text-white">Optimum Flow State</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="text-sm text-[#e0e0e0] mb-2"><strong>Core Focus (Skeleton):</strong></p>
+                            <p class="text-sm text-[#a3a3a3] mb-4">Kinetic Harmony, Rhythm, and Advanced Sequence Linking.</p>
+                            <p class="text-sm text-[#e0e0e0] mb-2"><strong>Spatial Dynamics:</strong></p>
+                            <ul class="text-sm text-[#a3a3a3] space-y-1 list-disc list-inside">
+                                <li>Room 2 (Reformer/Barrel): Max Pax 8</li>
+                            </ul>
+                        </div>
+                        <div class="border-l md:border-[#222] pl-0 md:pl-6 pt-4 md:pt-0 border-t md:border-t-0">
+                            <p class="protocol-id text-[10px] text-[#888] uppercase tracking-widest mb-2">Cleared Instructors</p>
+                            <p class="text-sm text-white">Shiuan, Chong</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
         <!-- TAB 3: CUEING ARMORY -->
         <div id="tab-armory" class="tab-content space-y-12">
             <div class="mb-4">
